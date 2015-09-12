@@ -28,7 +28,7 @@ function setAlarm(alarm_hour,alarm_minute){
 
 	if ((hour==alarm_hour) && (minute==alarm_minute)) {
 		
-		var audio= new Audio("C:/Users/h.rodriguez.leon/Desktop/initializr/js/Gallo.mp3");
+		var audio= new Audio("../audio/Gallo.mp3");
 		audio.play();
 	}
 	else{
