@@ -1,0 +1,144 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    background-color: #000;
+    
+}
+.main-container{
+    overflow: hidden;
+    height: 100%;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;  
+    position: relative; 
+    height: 100%;
+}
+
+h1{
+    color: #FFF;
+    text-align: center;
+}
+
+ #clock_container{
+    background-image: url(../img/reloj_background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    height: 165px;
+    width: 260px;
+
+ }
+
+     #clock{
+        position: absolute;
+        margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        border: none;
+        transform: translate(-50%, -50%);
+        font-size: 17px;
+        text-align: center;
+        background: transparent;
+        
+     }
+ 
+ .clearfix:before, .clearfix:after { content: ""; display: table; }
+
+ #clock_container .alarm_container{
+    margin: 0 auto;
+    position: absolute;
+    bottom: 5px;
+ }
+#clock_container .alarm_container input{
+    margin-left: 3px;
+}
+
+ #clock_container .alarm_container button{
+    background: url(../img/alarm.svg) no-repeat;
+    width: 100px;
+    height: 32px;
+    background-size: 20% 100%;
+    padding: 5px;
+    background-position: left bottom;
+    box-shadow: 5px 5px 5px #888888;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+ }
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+@media only screen and (min-width: 320px) {
+
+        #clock_container .alarm_container input,  #clock_container .alarm_container label{
+        font-size: 14px;
+    }   
+
+    #clock_container .alarm_container button{
+        width: 40px;
+        background-size: 100% 100%;
+       color: transparent;
+    }
+}
+@media only screen and (min-width: 480px) {
+     #clock_container{
+        height: 170px;
+        width: 300px;
+    }
+
+        #clock{
+            font-size: 24px;
+        }
+    #clock_container .alarm_container button{
+        width: 100px;
+        background-size: 20% 100%;
+        color: #000;
+    }    
+      
+}
+
+@media only screen and (min-width: 768px) {
+    #clock_container{
+        height: 200px;
+        width: 400px;
+    }
+
+        #clock{
+            font-size: 30px;
+        }
+}
+
+@media only screen and (min-width: 1140px) {
+    
+    #clock_container{
+        height: 250px;
+        width: 500px;
+    }
+
+        #clock{
+            font-size: 45px;
+        }
+
+   
+}
+
+
+
+
