@@ -64,6 +64,8 @@ h1{
  }
 #clock_container .alarm_container input{
     margin-left: 3px;
+    width: 32px;
+    height: 16px;
 }
 
  #clock_container .alarm_container button{
@@ -138,7 +140,3 @@ h1{
 
    
 }
-
-
-
-
